@@ -1,0 +1,70 @@
+"Q1."
+s="Hey i am from New Delhi"
+print(len(s))
+list=s.split()
+print(list)
+
+"Q2."
+
+s="name is rahul"
+print(s.capitalize())
+print(s.replace('n', 'R').title())
+print(s.upper())
+
+"Q3."
+l=float(input("enter length : "))
+b=float(input("enter breadth : "))
+p=2*(l+b)
+a=l*b
+print("Perimeter = ",p)
+print("Area = ",a)
+
+"Q4."
+d=float(input("Enter the diameter of the circle : "))
+r=d/2
+c=2*3.14*r
+a=3.14*r*r
+print("Circumference : ",c)
+print("Area : ",a)
+
+"Q5."
+import math
+coeffa=float(input("Enter the coefficient a : "))
+coeffb=float(input("Enter the coefficient b : "))
+coeffc=float(input("Enter the coefficient c : "))
+coeffd=float(input("Enter the coefficient d : "))
+dis=math.sqrt((coeffb**2)-4*coeffc)
+alpha=(-coeffb+dis)/2*coeffa
+beta=(-coeffb-dis)/2*coeffa
+
+print("The roots of the Quadratic eq. : ", "Alpha = ",alpha, "Beta = ",beta)
+
+"Q6" 
+r=float(input("Enter the raidus : ")) 
+v=round((4/3)*3.14*(r**3),3) 
+print("Volume of sphere : ",v)
+
+"Q7."
+n=input("Enter the number : ")
+if(n.isdigit()):
+    print(len(n))
+else:
+    print("Enter number only")
+    
+"Q8."
+str=input("Enter a string : ")
+print(str.upper())
+
+"Q9."
+s=input("Enter a string : ")
+n=int(input("Enter index NO. : "))
+c=input("Enter a character : "))
+if n<len(s):
+    s=list(s)
+    s[n]=c
+else:
+    print("Invalid")
+    
+"Q10."
+str=("Enter a string")
+print(str[::-1])
